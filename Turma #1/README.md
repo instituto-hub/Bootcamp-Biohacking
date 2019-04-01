@@ -14,8 +14,8 @@ Gabriel Bastos
 Rozeane Araujo
 
 
-### Fotografia
-Zeilane
+### Registro 
+Zeilane Fernandes
 
 
 ### Participantes
