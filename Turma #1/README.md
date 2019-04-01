@@ -8,7 +8,9 @@ Esse é o repositório dos projetos desenvolvidos durante o Bootcamp. Ocorreu en
 
 ### Facilitadores
 Caroline Gonzaga
+
 Gabriel Bastos
+
 Rozeane Araujo
 
 
@@ -17,18 +19,32 @@ Zeilane
 
 
 ### Participantes
-Ariana Cristina	 Barcelos de Santana
-Alva Valeria Machado	 Nascimento
-Clara Acioli
-Heloísa Oss Boll
-Lorena Novaes Caruso
-Vitória Lunardi Xavier
-Fernando do Nascimento Dias
-Júlio Bentes
-Romario Gomes
-Carlos Junior
-Fernando Silva
-Hugo Carvalhal Silva
+Alva Valeria Machado Nascimento
+
+Ariana Cristina Barcelos de Santana
+
 Carlos Altoé
+
+Carlos Junior
+
+Clara Acioli
+
 Fabio Paredes de Oliveira
+
+Fernando do Nascimento Dias
+
+Fernando Silva
+
+Heloísa Oss Boll
+
+Hugo Carvalhal Silva
+
 Ismael Cabral
+
+Júlio Bentes
+
+Lorena Novaes Caruso
+
+Romario Gomes
+
+Vitória Lunardi Xavier	
