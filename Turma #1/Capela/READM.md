@@ -3,7 +3,5 @@ Uma capela de laboratório, é um equipamento de proteção coletiva para todos 
 
 
 
-
-
 ## Materiais
 
