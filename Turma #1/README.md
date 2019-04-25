@@ -48,3 +48,7 @@ Lorena Novaes Caruso
 Romario Gomes
 
 Vitória Lunardi Xavier	
+
+
+## Créditos
+Arquivos trabalhados e adaptados dos orginais de [BioHackAcademy](https://github.com/BioHackAcademy/BioHackAcademy.github.io/tree/master/biofactory/class)
