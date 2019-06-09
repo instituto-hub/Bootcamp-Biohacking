@@ -40,8 +40,7 @@ NOTE for first time users:
 /  Libraries
 */
 #include <math.h>    // loads a library with more advanced math functions
-#include <Wire.h> // Needed for I2C connection
-#include "LiquidCrystal_I2C.h" // Needed for operating the LCD screen
+#include "LiquidCrystal.h" // Needed for operating the LCD screen
 #include <OneWire.h>
 /* *******************************************************
 */
@@ -49,8 +48,11 @@ NOTE for first time users:
 /* *******************************************************
 /  LCD
 */
-// Set the LCD address to 0x27 for a 16 chars and 2 line display
-LiquidCrystal_I2C lcd(0x27,16,2);
+
+#define luzfundo 7
+
+LiquidCrystal lcd(13, 12, 5, 4, 3, 2);
+
 /* *******************************************************
 */
 
@@ -111,8 +113,9 @@ void setup() {            //This function gets called when the Arduino starts
   Wire.begin();
 
   // Initialize the LCD and print a message
-  lcd.init(); // start the LCD
-  lcd.backlight(); // enable the backlight
+  lcd.begin(16, 2);
+  pinMode(luzfundo,OUTPUT);
+  digitalWrite(luzfundo,HIGH);
   lcd.clear(); // Clear the screen from any character
   lcd.setCursor(0,0); // Start writing from position 0 row 0, so top left
   lcd.print(F("BioHack Academy"));

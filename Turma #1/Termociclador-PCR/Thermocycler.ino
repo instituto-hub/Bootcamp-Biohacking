@@ -97,7 +97,6 @@ public:
 */
 
 #include <math.h>   // loads a library with more advanced math functions
-#include <Wire.h>   // Needed for I2C connection with LCD screen
 #include <LiquidCrystal.h>
 #include <OneWire.h>// Needed for the temperature sensors
 /* *******************************************************
