@@ -98,9 +98,8 @@ public:
 
 #include <math.h>   // loads a library with more advanced math functions
 #include <Wire.h>   // Needed for I2C connection with LCD screen
-#include "LiquidCrystal_I2C.h" // Needed for operating the LCD screen
+#include <LiquidCrystal.h>
 #include <OneWire.h>// Needed for the temperature sensors
-//#include <DallasTemperature.h> // Temperature reading library
 /* *******************************************************
 */
 
@@ -108,7 +107,10 @@ public:
 /  LCD
 */
 // Set the LCD address to 0x27 for a 16 chars and 2 line display
-LiquidCrystal_I2C lcd(0x27,16,2);
+
+#define luzfundo 7
+LiquidCrystal lcd(13, 12, 5, 4, 3, 2);
+
 /* *******************************************************
 */
 
@@ -237,9 +239,6 @@ void setup() {
   // Update clock
   lastTick = millis();
 
-  // Initialize I2C connection with the LCD screen
-  Wire.begin();
-
   // Open serial connection with the computer and print a message
   Serial.begin(9600);
   Serial.println(F("BioHack Academy Thermocycler"));
@@ -273,8 +272,9 @@ void setup() {
  // tempSensor2.begin();
   
   // Initialize the LCD and print a message
-  lcd.init();
-  lcd.backlight();
+  lcd.begin(16, 2);
+  pinMode(luzfundo,OUTPUT);
+  digitalWrite(luzfundo,HIGH);
   lcd.clear();
   lcd.setCursor(0,0);
   lcd.print(F("BioHack Academy"));
