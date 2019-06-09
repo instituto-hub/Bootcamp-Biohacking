@@ -23,7 +23,7 @@
 */
 
 #include <Wire.h> // Needed for I2C connection
-#include "LiquidCrystal_I2C.h" // Needed for operating the LCD screen
+#include <LiquidCrystal.h>
 #include <Servo.h> // Needed for controlling the ESC
 /* *******************************************************
 */
@@ -31,8 +31,11 @@
 /* *******************************************************
 /  LCD
 */
-// Set the LCD address to 0x27 for a 16 chars and 2 line display
-LiquidCrystal_I2C lcd(0x27,16,2);
+
+#define luzfundo 7
+
+LiquidCrystal lcd(13, 12, 5, 4, 3, 2);
+
 /* *******************************************************
 */
 
@@ -132,9 +135,6 @@ void setup() {
   // Update clock
   lastTick = millis();
 
-  // Initialize I2C
-  Wire.begin();
-
   // Open serial connection and print a message
   Serial.begin(9600);
   Serial.println(F("BioHack Academy Centrifuge"));
@@ -160,8 +160,9 @@ void setup() {
   myservo.write(21);
   
   // Initialize the LCD and print a message
-  lcd.init();
-  lcd.backlight();
+  lcd.begin(16, 2);
+  pinMode(luzfundo,OUTPUT);
+  digitalWrite(luzfundo,HIGH);
   lcd.clear();
   lcd.setCursor(0,0);
   lcd.print(F("BioHack Academy"));
